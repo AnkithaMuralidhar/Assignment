@@ -1,0 +1,9 @@
+<div class="container">
+  <div class ="left">
+    <app-sidebar [branches]="branches" (onClickBranch)="onClickBranch($event)"></app-sidebar>
+  </div>
+
+  <div class="right">
+    <app-commit-list [commitList]="commitList"></app-commit-list>
+  </div>
+</div>

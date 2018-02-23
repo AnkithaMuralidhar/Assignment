@@ -1,0 +1,17 @@
+.container {
+    padding: 40px;
+    width:90%;
+    align-content: center;
+    display: inline-block;
+}
+
+.left {
+    width:30%;
+    float: left;
+}
+
+.right {
+    margin-left: 5%;
+    width:65%;
+    float: left;
+}
