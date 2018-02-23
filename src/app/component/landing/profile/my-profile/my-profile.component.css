@@ -1,0 +1,57 @@
+.box {
+    width: 80%;
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+    height: 70vh;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    color: #fff;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-image {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
+
+.profile-name {
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.profile-designation {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.about-me {
+    text-align: justify;
+}
+
+.social-accounts ul {
+    margin-left: -47px;
+    color: white;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-accounts ul li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+}
+
+.social-accounts ul li a {
+     color: rgb(212, 205, 205);
+     font-size: 22px;
+     transition: 0.3s;
+}
+
+.social-accounts ul li a:hover {
+    color: #fff;
+    font-size: 28px;
+}

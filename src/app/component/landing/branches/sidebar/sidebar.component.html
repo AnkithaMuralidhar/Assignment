@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li *ngFor="let branch of branches; let i = index" >
+      <span class="branch-items">
+        <app-side-bar-item [item]="branch" [active]="i === activeItem" (onClickItem)="onClickItem($event, i)"></app-side-bar-item>
+      </span>
+    </li>
+  </ul>
+</div>

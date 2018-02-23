@@ -1,0 +1,10 @@
+<div>
+
+  <div class="left">
+    <app-sidebar [branches]="branches" (onClickBranch)="onClickBranch($event)"></app-sidebar>
+  </div>
+
+  <div class="right">
+    <app-commit-list [commitList]="commitList" [page] = "currentPage" (onPagination) = "onPagination($event)"></app-commit-list>
+  </div>
+</div>

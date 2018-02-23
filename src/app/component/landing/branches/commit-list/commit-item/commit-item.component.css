@@ -1,0 +1,26 @@
+.commit-message {
+    letter-spacing: 2px;
+    width: 100%;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.commit-item {
+    padding: 15px;
+}
+
+.commit-name {
+    float: left;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.commit-date {
+    float: right;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-weight: 100;
+}

@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li *ngFor="let branch of branches; let i = index" (click)="onClickItem(branch, i)" [class.active] ="activeItem === i">
+      <span class="branch-item" >
+        {{branch.name}}
+      </span>
+    </li>
+  </ul>
+</div>

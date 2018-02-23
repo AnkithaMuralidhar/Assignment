@@ -1,0 +1,41 @@
+<div class="container">
+
+  <div class="button-wrapper">
+
+    <button (click)="paginate(page-1)" style="float:left" title="This is server side pagination">
+      <span>
+        <i class="fas fa-chevron-left"></i>
+      </span>
+      Prev
+    </button>
+    <button (click)="paginate(page+1)" style="float:right" title="This is server side pagination">
+      Next
+      <span>
+        <i class="fas fa-chevron-right"></i>
+      </span>
+    </button>
+  </div>
+  <br>
+
+  <ul>
+    <li *ngFor="let commits of displayList" class="commit-item">
+      <app-commit-item [message]="convertStringToTitleCase(commits.commit.message)" [date]="commits.commit.committer.date" [name]="commits.commit.committer.name"></app-commit-item>
+    </li>
+  </ul>
+
+  <div class="internal-pagination" style="text-align: center">
+  <button (click)="paginateInternally(currentPage-1)" title="This is internal pagination">
+      <span>
+        <i class="fas fa-chevron-left"></i>
+      </span>
+      Prev
+    </button>
+    <span style="padding: 10px;">{{currentPage}}</span>
+    <button (click)="paginateInternally(currentPage+1)" title="This is internal pagination">
+      Next
+      <span>
+        <i class="fas fa-chevron-right"></i>
+      </span>
+    </button>
+  </div>
+</div>

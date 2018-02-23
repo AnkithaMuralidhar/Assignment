@@ -1,0 +1,22 @@
+.branch-item {
+    opacity: 0.4;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    text-align: center; 
+    letter-spacing: 2px;
+    transition: 0.1s;
+    cursor: pointer;
+    font-family: Quicksand;
+    font-weight: 100;
+}
+
+.branch-item:hover {
+    opacity: 1;
+    font-size: 20px;
+}
+
+.branch-item.active {
+    opacity: 1;
+    font-size: 20px;
+}

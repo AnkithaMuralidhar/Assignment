@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <nav [class.black]="addClass">
+    <div class="logo" (click) ="onClick(logo)">
+        <span class="logo-icon"><i class="fab fa-autoprefixer"></i> {{ logo.label }}
+        </span>
+    </div>
+    <ul>
+      <li *ngFor="let link of links">
+        <a class="active" (click) ="onClick(link)">{{link.label}}</a>
+      </li>
+    </ul>
+
+  </nav>
+
+</div>
